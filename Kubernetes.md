@@ -1,0 +1,17 @@
+## Installing
+- [Install container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/)
+	- [Install containerd](https://github.com/containerd/containerd/blob/main/docs/getting-started.md#step-1-installing-containerd)
+	- [Install containerd.service](https://github.com/containerd/containerd/blob/main/docs/getting-started.md#systemd)
+	- [Install runc](https://github.com/containerd/containerd/blob/main/docs/getting-started.md#step-2-installing-runc)
+	- [Install CNI plugins](https://github.com/containerd/containerd/blob/main/docs/getting-started.md#step-3-installing-cni-plugins) 
+	- [Generate default containerd config](https://github.com/containerd/containerd/blob/main/docs/getting-started.md#customizing-containerd)
+	- [Change config to use systems group driver](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd)
+	- [Forward IPV4 and let iptables see bridged traffic](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#forwarding-ipv4-and-letting-iptables-see-bridged-traffic)
+- [Install kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl)
+	- [Turn swap off](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+- [Install a Pod network add-on](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)
+	- [Install Calico](https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart#install-calico)
+- [Install load balancer](https://metallb.universe.tf/installation/#installation-by-manifest)
+	- [Define IPs to assign to load balancer](https://kubernetes.github.io/ingress-nginx/deploy/baremetal/#a-pure-software-solution-metallb)
+- [Install ingress controller](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start)
+	- [Create ingress resource](https://kubernetes.github.io/ingress-nginx/deploy/#online-testing)
